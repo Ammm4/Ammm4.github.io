@@ -1,0 +1,11 @@
+.contact {
+  height: 50vh;
+  background-color: #808080;
+  text-align: center;
+}
+
+.contact-heading span{
+  display: inline-block;
+  padding: 0.15rem;
+  border: 1px solid #f9f9f9
+}

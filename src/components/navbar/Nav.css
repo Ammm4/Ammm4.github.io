@@ -1,0 +1,28 @@
+.navbar {
+  padding: 1rem;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 5;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlist {
+  display: flex
+}
+
+.navlist li {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.navlist li a{
+  text-decoration: none;
+  color: #f9f9f9;
+ 
+  
+}

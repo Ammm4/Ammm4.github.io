@@ -1,0 +1,10 @@
+.portfolio {
+  height: 50vh;
+  text-align: center;
+}
+
+.portfolio-heading {
+  display: inline-block;
+  padding: 0.15rem;
+  border: 1px solid #f9f9f9
+}
