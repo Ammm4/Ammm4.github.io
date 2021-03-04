@@ -1,11 +1,35 @@
 .contact {
-  height: 50vh;
-  background-color: #808080;
+  
+  padding: 1rem;
+  background-color: #3a3b3c;
+  color:#858585;
   text-align: center;
 }
 
 .contact-heading span{
   display: inline-block;
   padding: 0.15rem;
-  border: 1px solid #f9f9f9
+  border: 1px solid #858585
+}
+
+.contact-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.telephone p, .address p, .email p {
+  line-height: 1.7rem;
+}
+
+.social-media p {
+  margin-top: 1.3rem;
+}
+.social-media a {
+  display: inline-block;
+  padding: 0 0.7rem;
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: #808080;
 }
