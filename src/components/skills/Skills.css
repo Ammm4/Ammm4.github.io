@@ -14,5 +14,5 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1rem;
+  padding: 45px 0;
 }
