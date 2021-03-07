@@ -7,48 +7,58 @@ function Skills() {
      <div id="skills" className="skills">
        <div className="skills-heading">MY SKILLS</div>
           <div className="skills-content">
-                       <div className="skillBox">
-                                        <div className='flip-front'>
-                                          <div className="flip-front-inner">
-                                              <div className="mt-4 mb-4"> <i className=" fas fa-code fa-4x"></i></div>
-                                              <h3 className="heading3 dem1">WEB BASICS</h3>
-                                           </div>
+                       <div className="skillBox">                                   
+                                          <div>           
+                                              <h3>WEB BASICS</h3>
+                                              <div className="hr-line"></div>                                
                                           </div>
-                                          <div className="flip-back">                           
-                                                  <ul className="list-group flip-back-inner">
-                                                      <li>Html</li>
-                                                      <li>Css</li>
-                                                      <li>Javascript</li>
+                                          <div>                           
+                                                  <ul className="skillset">
+                                                      <li>HTML</li>
+                                                      <li>CSS</li>
+                                                      <li>JAVASCRIPT</li>
+                                                  </ul>                                        
+                                          </div>                                              
+                        </div>
+                        <div className="skillBox">                                
+                                          <div>
+                                             <h3>FRAMEWORKS</h3>
+                                              <div className="hr-line"></div>
+                                           </div>                  
+                                          <div>                           
+                                                  <ul className="skillset">
+                                                      <li>REACT</li>
+                                                      <li>BOOTSTRAP</li>
+                                                      <li>REDUX</li>
                                                   </ul>                                        
                                           </div>                                              
                         </div>
                         <div className="skillBox">
                                         
                                           <div>
-                                              <div> <i className="fab fa-react fa-4x"></i></div>
-                                              <h3>FRAMEWORKS</h3>
+                                              <h3 className="heading3 dem1">DATABASE & TOOLS</h3>
+                                              <div className="hr-line"></div>
                                            </div>
-                        
+                                          
                                           <div>                           
-                                                  <ul>
-                                                      <li>Html</li>
-                                                      <li>Css</li>
-                                                      <li>Javascript</li>
+                                                  <ul className="skillset">
+                                                      <li>MONGODB</li>
+                                                      <li>GIT & GITHUB</li>
+                                                      <li>VS CODE</li>
+                                                      <li>BROWSER TOOLS</li>
                                                   </ul>                                        
                                           </div>                                              
                         </div>
-                        <div className="skillBox">
-                                        <div className='flip-front'>
-                                          <div className="flip-front-inner">
-                                              <div className="mt-4 mb-4"> <i className=" fas fa-database fa-4x"></i></div>
-                                              <h3 className="heading3 dem1">DATABASE & TOOLS</h3>
+                        <div className="skillBox">                
+                                          <div>                            
+                                              <h3>BACKEND</h3>
+                                              <div className="hr-line"></div>
                                            </div>
-                                          </div>
-                                          <div className="flip-back">                           
-                                                  <ul className="list-group flip-back-inner">
-                                                      <li>Html</li>
-                                                      <li>Css</li>
-                                                      <li>Javascript</li>
+                        
+                                          <div>                           
+                                                  <ul className="skillset">
+                                                      <li>NODEJS</li>
+                                                      <li>EXPRESS</li>    
                                                   </ul>                                        
                                           </div>                                              
                         </div>
