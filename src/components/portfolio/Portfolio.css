@@ -92,7 +92,13 @@
 
 
 
-
+/* ================ Closing Line ============= */
+.closing-line{
+  width:85%;
+  height: 2px;
+  background-color: #f7f7f7;
+  margin: 0 auto 45px auto;
+}
 
 
 
