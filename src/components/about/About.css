@@ -1,6 +1,4 @@
-.about {
-  
-  height: 50vh;
+.about { 
   width: 85%;
   margin: auto;
 }
@@ -12,6 +10,25 @@
   padding: 0.15rem;
   border: 1px solid #fff;
 }
-.about p {
+
+.about-content {
+  padding: 45px 0;
+}
+
+.about-content p {
   text-align: left;
+  line-height: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.btn-container {
+   margin-top: 0.9rem;
+}
+
+button.btn {
+  border: none;
+  outline: none;
+  background-color: #808080;
+  color:#f9f9f9;
+  padding: 12px 16px;
 }
