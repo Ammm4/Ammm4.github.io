@@ -20,7 +20,7 @@
 }
 
 .navbar .fa-bars {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #f9f9f9;
   display: none;
 }
@@ -74,6 +74,11 @@
   }
   .nav-toggle {
     top: 3.2rem;
+  }
+  .navbar .brand {
+    font-size: 5rem;
+    margin-top: -2rem;
+
   }
 
 }
