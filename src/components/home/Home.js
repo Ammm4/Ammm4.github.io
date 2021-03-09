@@ -10,7 +10,7 @@ import'./Home.css';
 
 function Home() {
   return(
-    <div className="home">
+    <div id="home" className="home">
         <div className="home-cover">
             <div class="home-banner">
                  <div class="home-banner-content">
