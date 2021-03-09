@@ -12,7 +12,7 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="navbar">
-          <div className="brand">ar.</div>
+          <div className="brand"><a href="#home">ar.</a></div>
           <div className="fas fa-bars" onClick={this.handleClick}></div>
           <div className="nav">
             <ul className="navlist">
