@@ -20,6 +20,22 @@ class App extends React.Component {
     document.querySelector('.navbar .fa-bars').classList.toggle('fa-times');
     document.querySelector('.navbar .nav').classList.toggle('nav-toggle');
   }
+  componentDidMount(){
+    var presentdata = document.body.scrollTop || document.documentElement.scrollTop;
+    window.addEventListener('scroll', function(){
+      var currentData = document.body.scrollTop || document.documentElement.scrollTop;
+      if(presentdata > currentData){
+        document.querySelector('.navbar').style.top = '0px';
+        
+      } else {
+        document.querySelector('.navbar').style.top = '-55px';
+        
+      }
+      presentdata = currentData;
+      document.querySelector('.navbar .fa-bars').classList.remove('fa-times');
+      document.querySelector('.navbar .nav').classList.remove('nav-toggle');
+    })
+  }
   render() {
     return (
         <div className="App">
