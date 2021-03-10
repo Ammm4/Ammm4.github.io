@@ -5,6 +5,7 @@ import './App.css';
 //Import Components
 import Nav from './components/navbar/Nav';
 import Home from './components/home/Home';
+import CV from './components/cv/cv.js';
 import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
@@ -14,7 +15,15 @@ import Socket from './components/socket/Socket';
 class App extends React.Component {
   constructor() {
     super();
+    this.state = {
+      showHideCv: false,
+      showHideMenu: false
+    }
+    this.showHideCv = this.showHideCv.bind(this);
     this.showNav = this.showNav.bind(this);
+  }
+  showHideCv(){
+    this.setState({showHideCv: !this.state.showHideCv})
   }
   showNav() {
     document.querySelector('.navbar .fa-bars').classList.toggle('fa-times');
@@ -40,8 +49,8 @@ class App extends React.Component {
     return (
         <div className="App">
             <Nav showNav={this.showNav} />
-            <Home />
-            <About />
+            <Home showHideCv={this.showHideCv}/>
+            {this.state.showHideCv && <CV showHideCv={this.showHideCv}/>}
             <Portfolio />
             <Skills />
             <Contact />
