@@ -1,7 +1,10 @@
 .portfolio {
+  margin-top: 2.6rem;
   text-align: center;
 }
-
+.portfolio .cubes{
+  margin-bottom: 0.5rem;
+}
 .portfolio-heading {
   display: inline-block;
   padding: 0.15rem;
@@ -95,12 +98,10 @@
 /* ================ Closing Line ============= */
 .closing-line{
   width:85%;
-  height: 2px;
+  height: 1.2px;
   background-color: #f7f7f7;
   margin: 0 auto 45px auto;
 }
-
-
 
 
 @media screen and (max-width: 600px) {
