@@ -1,0 +1,89 @@
+.modal {
+  position: fixed;
+  color:#333;
+  top:0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+  background-color: rgba(0,0,0,0.3);
+  overflow: auto;
+}
+
+.modal-content {
+  width: 65%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  margin: 1.9rem auto;
+  padding: 0 1rem;
+  border-radius: 5px;
+  line-height: 1.6rem;
+}
+
+ul.cv-list {
+  padding-left: 2.3rem;
+}
+
+.modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 1rem 0rem;
+}
+.modal-heading button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  transition: 0.5s ease;
+}
+
+.modal-heading button:hover {
+  color:red;
+}
+
+.modal-body .contact-info {
+  text-align: center;
+}
+
+.modal-body .contact-info p {
+  margin-top: 1rem;
+}
+
+.education .education-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.modal-ending {
+  border-top: 1px solid #f1f1f1;
+  text-align: right;
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+.modal-ending button {
+  background-color: #dc3545;
+  border-radius: 5px;
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+}
+
+.modal-ending button:hover {
+  background-color: red;
+  color: white;
+  
+}
+.info {
+  margin-top: 1rem;
+}
+
+.info-heading {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+}
