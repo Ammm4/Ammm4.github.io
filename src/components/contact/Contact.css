@@ -1,8 +1,7 @@
 .contact {
-  
-  padding: 1rem;
+  padding: 2.9rem 0;
   background-color: #3a3b3c;
-  color:#858585;
+  color:#A5A5A5;
   text-align: center;
 }
 
@@ -13,23 +12,54 @@
 }
 
 .contact-content {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  width: 85%;
+  text-align: left;
+  margin: auto;
+  padding: 2rem 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 1.2rem;
 }
 
 .telephone p, .address p, .email p {
-  line-height: 1.7rem;
+  padding-top: 0.5rem;
+  line-height: 1.8rem;
+}
+
+.social-media {
+margin-top: 1rem;
+text-align: left;
 }
 
 .social-media p {
-  margin-top: 1.3rem;
+  text-align: left;
 }
+
 .social-media a {
   display: inline-block;
-  padding: 0 0.7rem;
-  font-size: 1.9rem;
+  padding: 0 1.2rem 0 0;
+  font-size: 2rem;
   text-decoration: none;
   color: #808080;
+}
+
+.fa-mobile-alt span{
+  font-family: 'Montserrat', sans-serif;
+  color: #f9f9f9;
+}
+
+@media screen and (max-width:600px){
+  .contact-content{
+    grid-template-columns: 1fr
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 700px){
+  .contact-content{
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media {
+    margin-top: 0;
+    }
 }
