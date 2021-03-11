@@ -1,5 +1,6 @@
 .skills {
   text-align: center;
+  margin-top: 0.4rem;
 }
 
 .skills-heading {
@@ -14,17 +15,29 @@
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1.5rem;
   padding: 45px 0;
 }
 
 .hr-line {
   width: 50px;
   height: 2px;
-  margin:  1rem auto 1rem 0;
+  margin:  0.9rem auto 0.9rem 0;
   background-color: #f7f7f7;
 }
 
 .skillset li {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   padding: 5px 0;
+}
+@media screen and (max-width: 350px){
+  .skills-content{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width:350px) and (max-width: 750px){
+  .skills-content{
+    grid-template-columns: 1fr 1fr;
+  }
 }

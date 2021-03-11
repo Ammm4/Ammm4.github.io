@@ -33,22 +33,6 @@ function Skills() {
                                                   </ul>                                        
                                           </div>                                              
                         </div>
-                        <div className="skillBox">
-                                        
-                                          <div>
-                                              <h3 className="heading3 dem1">DATABASE & TOOLS</h3>
-                                              <div className="hr-line"></div>
-                                           </div>
-                                          
-                                          <div>                           
-                                                  <ul className="skillset">
-                                                      <li>MONGODB</li>
-                                                      <li>GIT & GITHUB</li>
-                                                      <li>VS CODE</li>
-                                                      <li>BROWSER TOOLS</li>
-                                                  </ul>                                        
-                                          </div>                                              
-                        </div>
                         <div className="skillBox">                
                                           <div>                            
                                               <h3>BACKEND</h3>
@@ -58,10 +42,27 @@ function Skills() {
                                           <div>                           
                                                   <ul className="skillset">
                                                       <li>NODEJS</li>
-                                                      <li>EXPRESS</li>    
+                                                      <li>EXPRESS</li>
+                                                      <li>MONGODB</li>   
                                                   </ul>                                        
                                           </div>                                              
                         </div>
+                        <div className="skillBox">
+                                        
+                                          <div>
+                                              <h3 className="heading3 dem1">TOOLS</h3>
+                                              <div className="hr-line"></div>
+                                           </div>
+                                          
+                                          <div>                           
+                                                  <ul className="skillset">                                                   
+                                                      <li>GIT & GITHUB</li>
+                                                      <li>VS CODE</li>
+                                                      <li>BROWSER TOOLS</li>
+                                                  </ul>                                        
+                                          </div>                                              
+                        </div>
+                        
                 </div>
         </div>
    )
