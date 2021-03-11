@@ -19,11 +19,17 @@
   font-weight: 700;
 }
 
-.navbar .fa-bars {
+.navbar .fa-bars  {
   font-size: 1.8rem;
   color: #f9f9f9;
   display: none;
 }
+.navbar .fa-times {
+  font-size: 1.8rem;
+  color: #f9f9f9;
+  display:none;
+}
+
 .navlist {
   display: flex;
   align-items: center;
@@ -50,7 +56,7 @@
 }
 
 @media (max-width: 768px) {
-  .navbar .fa-bars {
+  .navbar .fa-bars, .navbar .fa-times {
     display: block;
   }
   .nav {

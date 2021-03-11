@@ -16,41 +16,46 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      lastScrollPosition: document.body.scrollTop || document.documentElement.scrollTop,
       showHideCv: false,
-      showHideMenu: false
+      showNavBar: true,
+      clicked: false
     }
     this.showHideCv = this.showHideCv.bind(this);
-    this.showNav = this.showNav.bind(this);
+    this.showNavItems = this.showNavItems.bind(this);
+    this.showHideNavBar = this.showHideNavBar.bind(this);
+    
   }
   showHideCv(){
     this.setState({showHideCv: !this.state.showHideCv})
   }
-  showNav() {
-    document.querySelector('.navbar .fa-bars').classList.toggle('fa-times');
-    document.querySelector('.navbar .nav').classList.toggle('nav-toggle');
+  
+  showNavItems(){
+    this.setState({clicked: !this.state.clicked})
   }
-  componentDidMount(){
-    var presentdata = document.body.scrollTop || document.documentElement.scrollTop;
-    window.addEventListener('scroll', function(){
-      var currentData = document.body.scrollTop || document.documentElement.scrollTop;
-      if(presentdata > currentData){
-        document.querySelector('.navbar').style.top = '0px';
-        
+  
+  showHideNavBar(){
+    this.setState({clicked: false})
+    var currentScrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
+      if(this.state.lastScrollPosition > currentScrollPosition){
+        this.setState({showNavBar: true})   
       } else {
-        document.querySelector('.navbar').style.top = '-55px';
-        
+        this.setState({showNavBar: false})
       }
-      presentdata = currentData;
-      document.querySelector('.navbar .fa-bars').classList.remove('fa-times');
-      document.querySelector('.navbar .nav').classList.remove('nav-toggle');
-    })
+      this.setState({lastScrollPosition: currentScrollPosition});
+      
   }
+  
+  componentDidMount(){
+    window.addEventListener('scroll', this.showHideNavBar) 
+  }
+
   render() {
     return (
         <div className="App">
-            <Nav showNav={this.showNav} />
+            {this.state.showNavBar && <Nav showNavItems={this.showNavItems} clicked={this.state.clicked}  />}
             <Home showHideCv={this.showHideCv}/>
-            {this.state.showHideCv && <CV showHideCv={this.showHideCv}/>}
+            {this.state.showHideCv && <CV showHideCv={this.showHideCv} />}
             <Portfolio />
             <Skills />
             <Contact />
@@ -59,21 +64,5 @@ class App extends React.Component {
     )
   }
 }
-
-
-
-/* function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Home />
-     <About />
-     <Portfolio />
-     <Skills />
-     <Contact />
-     <Socket />
-    </div>
-  );
-} */
 
 export default App;

@@ -23,7 +23,6 @@
   top: 50%;
   left: 50%;
   transform: translate( -50%, -50%);
-  
   letter-spacing: 2px;
 }
 
@@ -53,7 +52,15 @@
    
 }
 .home-about .aboutList li{
-  margin: 0;
+  margin: 0 0.15rem;
+}
+
+.aboutList li button {
+  background-color: transparent;
+  color: #292929;
+  outline: none;
+  border: none;
+  transition: 0.5s ease;
 }
 .aboutList li a {
   text-decoration: none;
@@ -61,7 +68,7 @@
   background-color:  none;
   transition: 0.5s ease; 
 }
-.aboutList li a:hover {
+.aboutList li a:hover, .aboutList li button:hover {
   color: #404040;
 }
 .icon-color {
@@ -72,4 +79,19 @@
   font-size: 1.1rem;
   padding-bottom: .25rem;
   font-family:'Dancing Script'
+}
+
+@media screen and (max-width: 675px){
+  .home-banner {
+    width: 180px;
+    height: 180px;
+    padding: 1rem;
+    
+  }
+}
+
+@media screen and (max-height: 300px){
+  .home {
+    height: 115vh;
+  }
 }

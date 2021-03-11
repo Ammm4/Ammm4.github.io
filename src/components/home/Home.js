@@ -5,37 +5,43 @@ import img3 from '../images/home-section/img3.png';
 import img4 from '../images/home-section/img4.png';
 
 import'./Home.css';
-
-
-
-function Home() {
-  return(
+class Home extends React.Component {
+  constructor(){
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(event){
+    event.preventDefault();
+    this.props.showHideCv();
+  }
+  render(){
+    return(
     <div id="home" className="home">
         <div className="home-cover">
-            <div class="home-banner">
-                 <div class="home-banner-content">
+            <div className="home-banner">
+                 <div className="home-banner-content">
                    <div>HELLO!</div>
                    <p>I'M AMIT!</p> 
-                   <div class="divide-line"></div>
-                   <div class="jobs">Front-end Developer</div>
+                   <div className="divide-line"></div>
+                   <div className="jobs">Front-end Developer</div>
                  </div>
             </div>
             <div className="home-about">
             <p className="">More About me...</p>
               <ul className="aboutList">
-                  <li><a href="#" title="Download CV">
-                    <span className="fa-stack">
+                  <li><a title="Download CV" onClick={this.handleClick}>
+                    <span className="fa-stack fa-1x">
                        <i className="fas fa-circle fa-stack-2x"></i>
-                       <i class="fas fa-file-download fa-stack-1x fa-inverse icon-color"></i>
+                       <i className="fas fa-file-download fa-stack-1x fa-inverse icon-color"></i>
                     </span>
                     </a>
                     </li>
                   <li><a href="#" title="Github">
-                  <span className="fa-stack">
+                     <span className="fa-stack">
                        <i className="fas fa-circle fa-stack-2x"></i>
-                       <i class="fab fa-github fa-stack-1x fa-inverse icon-color"></i>
-                    </span>
-                    </a>
+                       <i className="fab fa-github fa-stack-1x fa-inverse icon-color"></i>
+                     </span>
+                     </a>
                     </li>
                   <li><a href="#" title="Linkedin">
                       <span className="fa-stack">
@@ -44,9 +50,9 @@ function Home() {
                         </span>
                     </a></li>
                   <li><a href="#" title="Facebook">
-                  <span className="fa-stack ">
+                  <span className="fa-stack">
                        <i className="fas fa-circle fa-stack-2x"></i>
-                       <i class="fab fa-facebook-f fa-stack-1x fa-inverse icon-color"></i>
+                       <i className="fab fa-facebook-f fa-stack-1x fa-inverse icon-color"></i>
                     </span>
                     </a></li>
                   
@@ -56,6 +62,9 @@ function Home() {
         </div>
     </div>
   )
+  }
 }
+
+
 
 export default Home;

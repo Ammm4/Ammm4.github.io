@@ -10,35 +10,35 @@ import img5 from '../images/code.png';
 function Portfolio(){
   return (
     <div id="portfolio" className="portfolio">
-        <div className="cubes"><span><i class="fas fa-cubes fa-2x"></i></span></div>
+        <div className="cubes"><span><i className="fas fa-cubes fa-2x"></i></span></div>
         <div className="portfolio-heading"><span>MY PROJECTS</span></div>
         <div className="portfolio-content">
              <div className="latest-project tile">
-                  <div className="latest tile-text">
+                  <div className="tile-text">
                      <h3>CryptoAlert</h3>
-                     <a href="#"><i class="fab fa-github"></i> View Code</a>
+                     <a href="#"><i className="fab fa-github"></i> View Code</a>
                   </div> 
              </div>
              <div className="project-1 tile">
-                <div className="project tile-text">
+                <div className="tile-text">
                      <h3>myWeather</h3>
-                     <a href="#"><i class="fab fa-github"></i> View Code</a>
+                     <a href="#"><i className="fab fa-github"></i> View Code</a>
                 </div> 
              </div>
               <div className="project-2 tile">
-                <div className="project tile-text">
+                <div className="tile-text">
                      <h3>SpotifyPlay</h3>
-                     <a href="#"><i class="fab fa-github"></i> View Code</a>
+                     <a href="#"><i className="fab fa-github"></i> View Code</a>
                 </div> 
               </div>
               <div className="project-3 tile">
-               <div className="project tile-text">
+               <div className="tile-text">
                      <h3>myToDo</h3>
-                     <a href="#"><i class="fab fa-github"></i> View Code</a>
+                     <a href="#"><i className="fab fa-github"></i> View Code</a>
                </div> 
              </div>
              <div className="project-4 tile">
-                <div className="project tile-text">
+                <div className="tile-text">
                      <h3>LightPlate</h3>
                      <p>Work In Progress..</p>
                 </div>
