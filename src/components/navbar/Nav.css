@@ -62,7 +62,7 @@
   .navbar-toggle {
     width: 100%;
     left: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     padding: 0 7.5%;
   }
   .navbar .fa-bars, .navbar .fa-times {
@@ -73,7 +73,7 @@
     width: 100%;
     top: -120%;
     left: 0;
-    background-color: rgba(0,0,0,0.8); 
+    background-color: rgba(0,0,0,0.9); 
   }
   .nav .navlist {
     height: calc(100vh - 4rem);
