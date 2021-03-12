@@ -1,8 +1,5 @@
 import React from 'react';
-import img1 from '../images/home-section/img1.png';
-import img2 from '../images/home-section/img2.png';
-import img3 from '../images/home-section/img3.png';
-import img4 from '../images/home-section/img4.png';
+import {linkList} from './linkList';
 
 import'./Home.css';
 class Home extends React.Component {
@@ -13,6 +10,9 @@ class Home extends React.Component {
   handleClick(event){
     event.preventDefault();
     this.props.showHideCv();
+  }
+  componentDidMount(){
+    document.querySelector('.aboutList .cv-link').addEventListener('click', this.handleClick)
   }
   render(){
     return(
@@ -29,42 +29,25 @@ class Home extends React.Component {
             <div className="home-about">
             <p className="">More About me...</p>
               <ul className="aboutList">
-                  <li><a href='#' title="Download CV" onClick={this.handleClick}>
-                    <span className="fa-stack fa-1x">
-                       <i className="fas fa-circle fa-stack-2x"></i>
-                       <i className="fas fa-file-download fa-stack-1x fa-inverse icon-color"></i>
-                    </span>
-                    </a>
-                    </li>
-                  <li><a href="https://github.com/Ammm4" target="_blank" title="Github">
-                     <span className="fa-stack">
-                       <i className="fas fa-circle fa-stack-2x"></i>
-                       <i className="fab fa-github fa-stack-1x fa-inverse icon-color"></i>
-                     </span>
-                     </a>
-                    </li>
-                  <li><a href="#" title="Linkedin">
-                      <span className="fa-stack">
-                          <i className="fas fa-circle fa-stack-2x"></i>
-                          <i className="fab fa-linkedin-in fa-stack-1x fa-inverse icon-color"></i>
-                        </span>
-                    </a></li>
-                  <li><a href="#" title="Facebook">
-                  <span className="fa-stack">
-                       <i className="fas fa-circle fa-stack-2x"></i>
-                       <i className="fab fa-facebook-f fa-stack-1x fa-inverse icon-color"></i>
-                    </span>
-                    </a></li>
-                  
+                {linkList.map((element,index) => {
+                        return(
+                              <li key={index}>
+                                  <a href={element.url} target="_blank" title={element.title} className={element.cName}>
+                                    <span className="fa-stack">
+                                      <i className="fas fa-circle fa-stack-2x"></i>
+                                      <i className={element.clName}></i>
+                                    </span>
+                                  </a>
+                              </li>
+                        )
+                })}
               </ul>
-            </div>
-            
+            </div>            
         </div>
     </div>
   )
   }
 }
-
 
 
 export default Home;
