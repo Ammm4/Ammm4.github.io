@@ -11,6 +11,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
+
 .navbar .brand {
   font-family: 'Dancing Script', cursive;
   padding: 0 0 0 0.2rem;
@@ -56,31 +59,39 @@
 }
 
 @media (max-width: 768px) {
+  .navbar-toggle {
+    width: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    padding: 0 7.5%;
+  }
   .navbar .fa-bars, .navbar .fa-times {
     display: block;
   }
   .nav {
     position: fixed;
-    width: 85%;
+    width: 100%;
     top: -120%;
-    left: 7.5%;
-    background-color: rgba(0,0,0,0.8);
-    
+    left: 0;
+    background-color: rgba(0,0,0,0.8); 
   }
   .nav .navlist {
-    height: calc(100vh - 3.2rem);
+    height: calc(100vh - 4rem);
     flex-flow: column;
     justify-content: center;
     align-items: center;
 
   }
+
   .navlist li {
     font-size: 1.3rem;
     margin: 1.5rem 0;
   }
+
   .nav-toggle {
-    top: 3.2rem;
+    top: 4rem;
   }
+
   .navbar .brand {
     font-size: 5rem;
     margin-top: -2rem;

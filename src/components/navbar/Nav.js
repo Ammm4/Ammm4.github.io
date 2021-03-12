@@ -11,8 +11,9 @@ class Nav extends React.Component {
       this.props.showNavItems();
     }
   render() {
+    // 
     return (
-      <div className="navbar">
+      <div className={this.props.clicked? "navbar navbar-toggle":"navbar"}>
           <div className="brand"><a href="#home">ar.</a></div>
           <div className={this.props.clicked? 'fas fa-times':'fas fa-bars'} onClick={this.handleClick}></div>
           <div className={this.props.clicked? 'nav nav-toggle':'nav'}>
