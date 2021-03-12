@@ -19,21 +19,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 1.2rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2.2rem;
 }
 
-.telephone p, .address p, .email p {
+.contact-detail p {
   padding-top: 0.5rem;
   line-height: 1.8rem;
-}
-
-.social-media {
-margin-top: 1rem;
-text-align: left;
-}
-
-.social-media p {
-  text-align: left;
 }
 
 .social-media a {
@@ -44,10 +36,7 @@ text-align: left;
   color: #808080;
 }
 
-.fa-mobile-alt span{
-  font-family: 'Montserrat', sans-serif;
-  color: #f9f9f9;
-}
+
 
 @media screen and (max-width:550px){
   .contact-content{
@@ -55,7 +44,7 @@ text-align: left;
   }
 }
 
-@media screen and (min-width:550px) and (max-width: 700px){
+@media screen and (min-width:550px) and (max-width: 900px){
   .contact-content{
     grid-template-columns: 1fr 1fr;
   }
