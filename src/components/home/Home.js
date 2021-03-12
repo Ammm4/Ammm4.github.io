@@ -29,14 +29,14 @@ class Home extends React.Component {
             <div className="home-about">
             <p className="">More About me...</p>
               <ul className="aboutList">
-                  <li><a title="Download CV" onClick={this.handleClick}>
+                  <li><a href='#' title="Download CV" onClick={this.handleClick}>
                     <span className="fa-stack fa-1x">
                        <i className="fas fa-circle fa-stack-2x"></i>
                        <i className="fas fa-file-download fa-stack-1x fa-inverse icon-color"></i>
                     </span>
                     </a>
                     </li>
-                  <li><a href="#" title="Github">
+                  <li><a href="https://github.com/Ammm4" target="_blank" title="Github">
                      <span className="fa-stack">
                        <i className="fas fa-circle fa-stack-2x"></i>
                        <i className="fab fa-github fa-stack-1x fa-inverse icon-color"></i>
