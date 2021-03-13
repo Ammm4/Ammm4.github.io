@@ -62,15 +62,18 @@
   border: none;
   transition: 0.5s ease;
 }
+
 .aboutList li a {
   text-decoration: none;
   color: #292929;
   background-color:  none;
   transition: 0.5s ease; 
 }
+
 .aboutList li a:hover, .aboutList li button:hover {
   color: #404040;
 }
+
 .icon-color {
   color: #999 !important;
 }
