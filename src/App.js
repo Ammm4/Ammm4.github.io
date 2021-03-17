@@ -19,11 +19,14 @@ class App extends React.Component {
       lastScrollPosition: document.body.scrollTop || document.documentElement.scrollTop,
       showHideCv: false,
       showNavBar: true,
-      clicked: false
+      clicked: false,
+      selectedProject: ""
     }
     this.showHideCv = this.showHideCv.bind(this);
     this.showNavItems = this.showNavItems.bind(this);
     this.showHideNavBar = this.showHideNavBar.bind(this);
+    this.handleTouchOutside = this.handleTouchOutside.bind(this);
+    this.showOverlay = this.showOverlay.bind(this);
     
   }
   showHideCv(){
@@ -46,8 +49,25 @@ class App extends React.Component {
       
   }
   
+  handleTouchOutside(event) {
+    if(!event.target.classList.contains('tile-item')){
+      console.log(event.target);
+      this.setState({selectedProject: ""})
+    }
+  }
+  
+  showOverlay(projectNumber) {
+    this.setState({selectedProject: projectNumber})
+  }
+
   componentDidMount(){
-    window.addEventListener('scroll', this.showHideNavBar) 
+    window.addEventListener('scroll', this.showHideNavBar);
+    document.addEventListener('touchstart', this.handleTouchOutside) 
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.showHideNavBar);
+    document.removeEventListener('touchstart', this.handleTouchOutside)
   }
 
   render() {
@@ -56,7 +76,7 @@ class App extends React.Component {
             {this.state.showNavBar && <Nav showNavItems={this.showNavItems} clicked={this.state.clicked}  />}
             <Home showHideCv={this.showHideCv}/>
             {this.state.showHideCv && <CV showHideCv={this.showHideCv} />}
-            <Portfolio />
+            <Portfolio selectedProject={this.state.selectedProject} showOverlay={this.showOverlay} />
             <Skills />
             <Contact />
             <Socket />

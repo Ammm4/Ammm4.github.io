@@ -28,34 +28,34 @@ a {
 }
 
 .portfolio-content .latest-project {
-  background-image: url('./components/images/home2.png');
+  background-image: url('./components/images/img1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .portfolio-content .project-1 {
-  background-image: url('./components/images/home2.png');
+  background-image: url('./components/images/img4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio-content .project-2 {
-  background-image: url('./components/images/home1.jpg');
+  background-image: url('./components/images/img3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio-content .project-3 {
-  background-image: url('./components/images/home.jpg');
+  background-image: url('./components/images/img2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio-content .project-4 {
-  background-image: url('./components/images/home4.jpeg');
+  background-image: url('./components/images/img5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
