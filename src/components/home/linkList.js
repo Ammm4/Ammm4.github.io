@@ -15,12 +15,12 @@ export const linkList = [
         title: 'Link to Linkedin',
         cName: 'linkedin-link',
         clName:'fab fa-linkedin-in fa-stack-1x fa-inverse icon-color',
-        url:'#'
+        url:'https://www.linkedin.com/in/amit-rana-336076161/'
       },
       {
         title: 'Link to Facebook',
         cName: 'facebook-link',
         clName:'fab fa-facebook-f fa-stack-1x fa-inverse icon-color',
-        url:'#'
+        url:'https://www.facebook.com/amit.rana.7140'
       }
 ]

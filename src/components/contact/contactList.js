@@ -19,14 +19,14 @@ export const contactLists = [
 export const socialProfiles = [
                {
                  cName: 'fab fa-facebook',
-                 url: '#'
+                 url: 'https://www.facebook.com/amit.rana.7140'
                },
                {
                 cName: 'fab fa-github',
-                url: '#'
+                url: 'https://github.com/Ammm4'
                },
                {
                 cName: 'fab fa-linkedin',
-                url: '#'
+                url: 'https://www.linkedin.com/in/amit-rana-336076161/'
               }
 ]
