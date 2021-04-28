@@ -17,8 +17,8 @@ function Portfolio(props){
                                                   <div className="angle1 tile-item"></div>
                                                   <div className="tile-text tile-item">
                                                        <h3 className="tile-item">{project.title}</h3>
-                                                       <a href={project.url}><i className="fab fa-github fa-2x tile-item"></i></a> 
-                                                       
+                                                       <a href={project.url}><i className="fab fa-github tile-item"></i></a> 
+                                                       <a href={project.url1} target="_blank"><i class="fab fa-firefox-browser"></i></a>
                                                   </div>
                                              <div className="angle2 tile-item"></div>
                                         </div>

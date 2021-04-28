@@ -9,6 +9,9 @@
 body {
   background-color: rgba(45,45,45,1);
   color: #f9f9f9;
+  width:100%;
+  max-width: 1500px;
+  margin: auto;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,6 +22,7 @@ a {
 }
 .home {
   height: 100vh;
+  min-height: 575px;
   background-image: url('./components/images/home2.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -28,34 +32,34 @@ a {
 }
 
 .portfolio-content .latest-project {
-  background-image: url('./components/images/img1.jpg');
+  background-image: url('./components/images/img6.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .portfolio-content .project-1 {
-  background-image: url('./components/images/img4.jpg');
+  background-image: url('./components/images/img1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio-content .project-2 {
-  background-image: url('./components/images/img3.jpg');
+  background-image: url('./components/images/img7.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio-content .project-3 {
-  background-image: url('./components/images/img2.jpg');
+  background-image: url('./components/images/img3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio-content .project-4 {
-  background-image: url('./components/images/img5.jpg');
+  background-image: url('./components/images/img2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

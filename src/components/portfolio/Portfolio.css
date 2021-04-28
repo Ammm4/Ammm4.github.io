@@ -12,8 +12,9 @@
 }
 
 .portfolio-content {
-  width: 85%;
-  min-height: 100vh;
+  width: 80%;
+  height: 100vh;
+  max-height: 600px;
   margin: auto;
   padding: 45px 0;
   display: grid;
@@ -29,7 +30,7 @@
 .tile {
   position: relative;
   width: 100%;
-  min-height: 18rem;
+  min-height: 15rem;
 }
 
 .tile-overlay {
@@ -124,13 +125,15 @@
 }
 
 @media screen and (max-width: 600px) {
-          .portfolio-content {         
+          .portfolio-content {            
             grid-template-areas: 'latest-project latest-project latest-project latest-project'
                                  'project-1 project-1 project-1 project-1' 
                                  'project-2 project-2 project-2 project-2'
                                  'project-3 project-3 project-3 project-3' 
                                  'project-4 project-4 project-4 project-4'                   
-                                  ;            
+                                  ;
+            height: auto; 
+            max-height: none;          
           }
   
 }
@@ -141,7 +144,15 @@
                           'latest-project latest-project project-2 project-2' 
                           'project-3 project-3 project-4 project-4'                    
                            ;
+    height: auto; 
+    max-height: none;    
   }
+  .tile {
+    position: relative;
+    width: 100%;
+    min-height: 18.5rem;
+  }
+  
 } 
 
 

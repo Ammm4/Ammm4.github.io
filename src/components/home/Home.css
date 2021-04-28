@@ -1,6 +1,7 @@
 .home-cover {
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(45,45,45,1));
+  background-image: linear-gradient(to bottom, rgba(45,45,45,1),rgba(45,45,45,0.6), rgba(45,45,45,1)); 
+  
   position: relative;
 }
 
@@ -83,11 +84,5 @@
     height: 180px;
     padding: 1rem;
     
-  }
-}
-
-@media screen and (max-height: 300px){
-  .home {
-    height: 115vh;
   }
 }

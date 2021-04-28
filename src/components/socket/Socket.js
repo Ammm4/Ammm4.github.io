@@ -4,7 +4,7 @@ import './Socket.css';
 function Socket(){
    return(
        <footer className="socket">                
-                  <p>Created by Amiit Rana | &#169; 2017 All Rights Reserved</p>                  
+                  <p>Created by Amiit Rana | &#169; 2021 All Rights Reserved</p>                  
       </footer>
 
    )
