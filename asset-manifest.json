@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/amitrana/static/css/main.51c57cda.chunk.css",
-    "main.js": "/amitrana/static/js/main.d41133af.chunk.js",
-    "main.js.map": "/amitrana/static/js/main.d41133af.chunk.js.map",
+    "main.css": "/amitrana/static/css/main.3a48ddbc.chunk.css",
+    "main.js": "/amitrana/static/js/main.aeb6b6e1.chunk.js",
+    "main.js.map": "/amitrana/static/js/main.aeb6b6e1.chunk.js.map",
     "runtime-main.js": "/amitrana/static/js/runtime-main.ae61c5e6.js",
     "runtime-main.js.map": "/amitrana/static/js/runtime-main.ae61c5e6.js.map",
     "static/js/2.bdbf6d27.chunk.js": "/amitrana/static/js/2.bdbf6d27.chunk.js",
     "static/js/2.bdbf6d27.chunk.js.map": "/amitrana/static/js/2.bdbf6d27.chunk.js.map",
     "index.html": "/amitrana/index.html",
-    "static/css/main.51c57cda.chunk.css.map": "/amitrana/static/css/main.51c57cda.chunk.css.map",
+    "static/css/main.3a48ddbc.chunk.css.map": "/amitrana/static/css/main.3a48ddbc.chunk.css.map",
     "static/js/2.bdbf6d27.chunk.js.LICENSE.txt": "/amitrana/static/js/2.bdbf6d27.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/amitrana/static/media/img5.29ea1d30.jpg"
+    "static/media/index.css": "/amitrana/static/media/img7.88e6ee70.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ae61c5e6.js",
     "static/js/2.bdbf6d27.chunk.js",
-    "static/css/main.51c57cda.chunk.css",
-    "static/js/main.d41133af.chunk.js"
+    "static/css/main.3a48ddbc.chunk.css",
+    "static/js/main.aeb6b6e1.chunk.js"
   ]
 }
