@@ -2,7 +2,7 @@ export const ProjectList = [
   {
     title: 'myTodo',
     url:'https://github.com/Ammm4/To-Do-Project',
-    url1:'#',
+    url1:'https://mytodoproj.herokuapp.com/',
     clName:'project-3 tile',
     num: 'four'
   },
@@ -23,14 +23,14 @@ export const ProjectList = [
   {
    title: 'myWeather',
    url:'https://github.com/Ammm4/myWeather',
-   url1:'https://ammm4.github.io/myWeather',
+   url1:'https://myweatheruk.herokuapp.com/',
    clName:'project-2 tile',
    num: 'three'
  },
  {
    title: 'SpotifyPlay',
    url:'https://github.com/Ammm4/Spotifyplay',
-   url1:'#',
+   url1:'https://ammm4.github.io/Spotifyplay',
    clName:'project-4 tile',
    num: 'five'
  }

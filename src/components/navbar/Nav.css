@@ -65,7 +65,7 @@
   .navbar .fa-bars, .navbar .fa-times {
     display: block;
   }
-
+  
   .nav {
     position: fixed;
     width: 100%;
@@ -79,7 +79,6 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .navlist li {
