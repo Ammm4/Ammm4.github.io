@@ -11,6 +11,7 @@
 
 .modal-content {
   width: 80%;
+  max-width: 1400px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
   margin: 1.9rem auto;
@@ -103,10 +104,22 @@ li.listItem .bullet {
 .info-heading {
   margin-bottom: 0.5rem;
 }
+table{
+  width: 100%;
+  
+}
 
+p a{
+  color: black;
+  text-decoration: underline;
+}
+p a:hover{
+  color:#00f;
+}
 @media screen and (max-width: 900px) {
   .modal-content {
-    width: 95%;
+    width: 98%;
+    min-width: 400px;
   }
   .education .education-row {
     grid-template-columns: 1fr;

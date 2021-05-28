@@ -12,17 +12,18 @@ function Contact(){
                         <div className="contact-detail" key={index}>
                             <i className={item.iconName}></i>
                             <span> <b>{item.title}</b></span>
-                            {item.p.map((para) => {
-                              return(<p>{para}</p>)
+                            {item.p.map((para, index) => {
+                              return(<p key={index.toString()}>{para}</p>)
                             })}
                         </div>
                    )
                 })}
+
                  <div className="social-media">
                   <p>
                     {socialProfiles.map((item,index) => {
                          return(
-                          <a href={item.url} target="_blank" key={index}>
+                          <a href={item.url} target="_blank" key={index.toString()} rel="noopener noreferrer">
                             <i className={item.cName}></i>
                           </a>
                          ) 

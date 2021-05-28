@@ -6,7 +6,6 @@ import './App.css';
 import Nav from './components/navbar/Nav';
 import Home from './components/home/Home';
 import CV from './components/cv/cv.js';
-import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Skills from './components/skills/Skills';

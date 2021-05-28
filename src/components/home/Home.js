@@ -32,7 +32,7 @@ class Home extends React.Component {
                 {linkList.map((element,index) => {
                         return(
                               <li key={index}>
-                                  <a href={element.url} target="_blank" title={element.title} className={element.cName}>
+                                  <a href={element.url} target="_blank" title={element.title} className={element.cName} rel="noopener noreferrer">
                                     <span className="fa-stack">
                                       <i className="fas fa-circle fa-stack-2x"></i>
                                       <i className={element.clName}></i>
